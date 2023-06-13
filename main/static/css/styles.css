@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	background-color: var(--bg-color-m);
+	color: var(--fg-color-m);
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+a {
+	color: var(--a-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--a-color-h);
+	text-decoration: underline;
+}
+
+.mlink {
+	color: gray;
+	font-size: small;
+	margin-bottom: 0;
+}
+
+.description {
+	margin-top: 2px;
+	font-size: 14px;
+}
+
+.results {
+	margin-bottom: 35px;
+}
+
+.a-result {
+	padding: 5px;
+	margin-left: 10px;
+	max-width: 600px;
+	overflow-x: hidden;
+}
+
+.indexform {
+	text-align: center;
+	vertical-align: middle;
+	top: 50%;
+	transform: translateY(100%);
+}
+
+h1 {
+	color: var(--fg-color-m);
+}
+
+#blue {
+	color: rgb(183, 81, 255);
+}
+
+input[type=search] {
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	max-width: 250px;
+	width: 100%;	
+	padding: 5px;
+	background-color: var(--bg-color-m);
+	color: var(--fg-color-m);
+	border: 1px solid rgb(113, 11, 185);
+	transition: 0.3s;
+}
+
+input[type=search]:focus {
+	border: 1px solid rgb(183, 81, 255);
+}
+
+.indexform button[type=submit] {
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	padding: 5px;
+	max-width: 80px;
+	width: 100%;
+	background-color: var(--bg-color-m);
+	color: var(--fg-color-m);
+	font-weight: bold;
+	border: 2px solid rgb(113, 11, 185);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button[type=submit]:hover {
+	border: 2px solid rgb(183, 81, 255);
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 5px;
+	border-top: 2px solid rgb(183, 81, 255);
+	text-align: center;
+	background-color: var(--bg-color-m);
+}
+
+.footer a {
+	margin-left: 5px;
+}
+
+.msearch {
+	background-color: var(--ms-color-bg-m);
+	padding: 3px;
+	padding-bottom: 0;
+	top: 0;
+	position: sticky;
+}
+
+.mtitle {
+	font-weight: bold;
+	padding-left: 4px;
+}
+
+.sbuttons {
+	padding: 2px;
+	display: flex;
+	margin-left: 4px;
+}
+
+.sbuttons button {
+	margin-bottom: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 0;
+	border-radius: 4px;
+	outline: 0;
+	width: 80px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: var(--sb-color-bg-m);
+	color: var(--fg-color-m);
+	display: flex;
+  	align-items: center;
+	margin-right: 10px;
+}
+
+.sbuttons button:last-child {
+	margin-right: 4px;
+}
+
+.bimage {
+	max-height: 16px;
+	max-width: 16px;
+	margin-right: 4px;
+	filter: brightness(250%);
+}
+
+#active {
+	color: var(--a-color);
+}
+
+#active img {
+	filter: none;
+}
+
+.vidimg {
+	border-radius: 4px;
+	max-width: 35%;
+	max-height: 35%;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.i-result {
+	max-width: 375px;
+	max-height: 230px;
+	margin: 5px;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+}
+
+.i-result img {
+	max-width: 375px;
+	max-height: 230px;
+	border-radius: 4px;
+}
+
+.i-result img:hover {
+	filter: brightness(80%);
+}
+
+.infobox {
+	float: right;
+	max-width: 600px;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: var(--ib-color-bg);
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.minititle {
+	color: var(--fg-color-m);
+	font-size: 15px;
+}
+
+.infotitle {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+hr {
+	color: rgb(183, 81, 255);
+}
+
+.correction-div {
+	margin-left: 10px;
+	padding: 5px;
+	margin-bottom: 4px;
+}
+
+.simage-container {
+	max-height: 80px;
+	max-width: 100px;
+	/*display: inline-block;*/
+	text-align: right;
+	float: right;
+	margin-right: 15px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.txtholder {
+	display: inline-block;
+}
+
+.simage-container img {
+	max-height: 50px;
+	max-width: 100px;
+	border-radius: 4px;
+}
+
+.rbuttons {
+	margin-bottom: 35px;
+	margin-left: 20px;
+}
+
+.pagebtn {
+	max-width: 120px;
+	width: 100%;
+	padding: 2px;
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	background-color: var(--bg-color-m);
+	color: var(--fg-color-m);
+	font-weight: bold;
+	border: 2px solid rgb(113, 11, 185);
+	cursor: pointer;
+	transition: 0.3s;
+	margin-right: 10px;
+}
+
+.pagebtn:last-child {
+	margin-right: 0;
+}
+
+/* Mobile stuff */
+
+@media screen and (max-width: 840px) {
+	.a-result {
+		font-size: 20px;
+	}
+
+	.infobox {
+		width: 100%;
+		max-width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.msearch {
+		height: 100px;
+	}
+
+	.msearch button {
+		font-size: 18px;
+		width: 120px;
+		margin-top: 4%;
+	}
+}
